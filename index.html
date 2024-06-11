@@ -20,22 +20,63 @@
           <div>
             <h1>Contador</h1>
             <p id="oi">0</p>
-            <button onClick={remover1}>Menos</button>
-            <button onClick={adicionar1}>Mais</button>
+            <button onClick={menos1000}>-1000</button>
+            <button onClick={menos100}>-100</button>
+            <button onClick={menos10}>-10</button>
+            <button onClick={menos1}>-1</button>
+            <button onClick={mais1}>+1</button>
+            <button onClick={mais10}>+10</button>
+            <button onClick={mais100}>+100</button>
+            <button onClick={mais1000}>+1000</button>
+            <button onClick={zerar}>zerar</button>
           </div>
         );
       }
 
-      function adicionar1() {
+      function menos1000() {
+        numero = numero - 1000;
+        mostrarnatela();
+      }
+      
+      function menos100() {
+        numero = numero - 100;
+        mostrarnatela();
+      }
+      
+      function menos10() {
+        numero = numero - 10;
+        mostrarnatela();
+      }
+      
+      function menos1() {
+        numero = numero - 1;
+        mostrarnatela();
+      }
+      
+      function mais1() {
         numero = numero + 1;
         mostrarnatela();
       }
 
-      function remover1() {
-        numero = numero - 1;
+      function mais10() {
+        numero = numero + 10;
         mostrarnatela();
       }
 
+      function mais100() {
+        numero = numero + 100;
+        mostrarnatela();
+      }
+
+      function mais1000() {
+        numero = numero + 1000;
+        mostrarnatela();
+      }
+
+      function zerar() {
+        numero = numero - numero
+        mostrarnatela()
+      }
 
       function mostrarnatela() {
         const p = document.querySelector("#oi");
